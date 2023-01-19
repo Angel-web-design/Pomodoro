@@ -1,0 +1,202 @@
+@font-face {
+    font-family: tech;
+    src: url(./fonts/ShareTechMono-Regular.ttf);
+}
+* {
+    font-family: tech;
+    color: white;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+
+    --dark: rgb(19, 19, 19);
+    --dark2: rgb(26, 26, 26);
+    --gray: rgb(31, 31, 31);
+    --gray2: rgb(23, 23, 23);
+    --Green1: rgb(0, 193, 0);
+}
+body {
+    padding: 0;
+    margin: 0;
+    background-color: var(--dark);
+    user-select: none;
+}
+nav {
+    position: absolute;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    right: 0px;
+    padding-right: 20px;
+}
+nav a {
+    position: relative;
+    text-decoration: none;
+    text-indent: 0;
+    font-size: 25px;
+    font-weight: bold;
+    margin: 10px;
+}
+header {
+    display: flex;
+    width: 100vw;
+    height: 12.5vh;
+    background-color: var(--gray);
+    align-items: center;
+    border: none;
+
+    padding: 10px;
+}
+main {
+    width: 100vw;
+    height: 78vh;
+    display: flex;
+}
+section {
+    width: 75vw;
+    height: 78vh;
+    border: 20px solid transparent;
+}
+aside {
+    width: 25vw;
+    height: 78vh;
+    border: 20px solid transparent;
+}
+hr {
+    height: 5px;
+    background-color: white;
+    border: none;
+    border-radius: 10%;
+}
+footer {
+    width: 100vw;
+    height: 9vh;
+    bottom: 0;
+    background-color: var(--dark2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h3 {
+    padding: 0;
+    margin: 10px 0 10px 0;
+}
+[type="text"] {
+    color: black;
+}
+#icon {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+#icon-text {
+    font-size: 30px;
+    margin: 10px;
+}
+#text-info {
+    font-weight: bold;
+    font-size: 20px;
+    margin: 15px;
+}
+#clock {
+    width: 70px;
+    height: 70px;
+    margin: 10px;
+}
+#copyright {
+    font-weight: bold;
+    font-size: 20px;
+}
+#timer {
+    display: flex;
+    font-size: 40px;
+    padding: 0;
+}
+
+[action="play"], [action="delete"] {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+.container-icon {
+    background-color: var(--dark2);
+    border: none;
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.pomodore {
+    width: 100%;
+    height: 100%;
+    background-color: var(--gray2);
+    position: relative;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.info {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.task {
+    display: flex;
+    width: 100%;
+    height: 100px;
+    padding: 15px 0 15px 0;
+    background-color: var(--gray);
+    border: 10px solid var(--gray2);
+    align-items: center;
+}
+.start {
+    width: 40px;
+    height: 40px;
+    background-color: var(--Green1);
+    border: none;
+    cursor: pointer;
+    border-radius: 20%;
+    margin: 10px 20px;
+}
+.trash {
+    float: right;
+    width: 40px;
+    height: 40px;
+    background-color: red;
+    border: none;
+    cursor: pointer;
+    border-radius: 20%;
+    margin: 0 10px 
+}
+.trash-icon {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+.task-identifier {
+    font-size: 30px;
+    margin: 0 5px 0 5px;
+}
+.index-span {
+    background-color: white;
+    width: 5px;
+    height: 80px;
+}
+.task-content {
+    font-size: 20px;
+    margin: 10px;
+}
+.check {
+    width: 25px;
+    height: 25px;
+    border: none;
+    cursor: pointer;
+    margin: 10px;
+}

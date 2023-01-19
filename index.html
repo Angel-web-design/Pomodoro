@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Miguel Ortiz">
+    <meta name="title" content="Pomodore App">
+
+    <title>Pomodore App</title>
+
+    <link rel="stylesheet" href="./index.css">
+    <script src="https://kit.fontawesome.com/80f09bcbb5.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <header>
+        <div class="container-icon">
+            <i class="fa-solid fa-code-branch" id="icon"></i>
+        </div>
+        <h2 id="icon-text">Proyect <i class="fa-solid fa-code"></i></h2>
+        <nav>
+            <a href="">Options</a>
+            <a href="">About</a>
+            <a href="">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <article class="pomodore">
+                <div id="timer">
+                    <h3 id="pomodoreTimer">00:00</h3>
+                </div>
+                <form action="POST" class="form">
+                    <input type="text" required id="task-input" maxlength="60">
+                    <input type="submit" value="Add" id="tAdd">
+                </form>
+                <div id="tasks">
+                    
+                    <div class="task">
+                        <h5 class="task-identifier">1</h5>
+                        <span class="index-span"></span>
+                        <button class="start"><i class="fa-solid fa-play" action="play"></i></button>
+                        <div style="width: 75%;">
+                            <h4 class="task-content">Terminar código de Snake.py - dino-chrome.js</h4>
+                        </div>
+
+                        <input type="checkbox" class="check">
+                        <button class="trash"><i class="fa-solid fa-trash" action="delete"></i></button>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <aside>
+            <article class="info">
+                <div class="container"><i class="fa-solid fa-clock" id="clock"></i></div>
+                <hr>
+                <p id="text-info">La Técnica Pomodoro es un método de gestión del tiempo desarrollado por Francesco Cirillo a finales de la década de 1980. Utiliza un temporizador para dividir el trabajo en intervalos, generalmente de 25 minutos de duración, separados por breves descansos.</p>
+            </article>
+        </aside>
+    </main>
+    <footer>
+        <p id="copyright">© Miguel Ángel Ortiz Loaiza - 2022</p>
+    </footer>
+
+
+    
+    <script src="./script.js"></script>
+</body>
+</html>
